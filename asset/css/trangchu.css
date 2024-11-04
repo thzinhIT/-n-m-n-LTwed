@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* khôi phục lại cỡ chữ mặc định */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  height: 100000px;
+  width: 100%;
+}
+
+/* phần common */
+a {
+  text-decoration: none;
+}
+:root {
+  --primary-color: #01519a;
+}
+
+.main-content {
+  max-width: calc(100% - 48px);
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* phần header */
+
+.header .body {
+  display: flex;
+  align-items: center;
+  background-color: #01519a;
+}
+
+.nav ul {
+  display: flex;
+  gap: 10px;
+}
+.nav {
+  /* margin-left: auto; */
+}
+.nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 50px;
+  padding: 0px 10px;
+  text-align: left;
+}
+
+.header .logo {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+.nav a:hover {
+  background-color: rgb(255, 102, 0);
+}
+
+.header .action {
+  margin-left: auto;
+}
+.btn {
+  min-width: 118px;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 1.6rem;
+  line-height: 50px;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #ecf00ccc;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.header .btn-sign-up {
+  min-width: 114px;
+}
+
+.header.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header .action {
+  margin-right: 1px;
+}
+
+/* code phần hình ảnh giới thiệu */
+.gioithieu .body {
+  margin-left: 100px;
+}
+.icon {
+  font-size: 35px;
+  color: var(--primary-color);
+}
+.icon:hover {
+  cursor: pointer;
+}
+
+/* code phần tuổi */
+.old {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.old .cart__avatar {
+  width: 170px;
+  height: 162px;
+  position: relative;
+}
+.cart__info {
+  display: block;
+  background-color: #85c227;
+  width: 170px;
+  height: 35px;
+  box-shadow: #0009 0px 0px 16px 0px;
+  text-align: center;
+  border-radius: 10px;
+
+  border: none;
+}
+.cart__info p {
+  border-color: #fff;
+  border-radius: 10px;
+  border-style: dashed;
+  border-width: 1px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 13.3333px;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 0px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.old .main-content {
+  display: flex;
+  gap: 77px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.old .cart {
+  transition: 0.25s;
+}
+.old .cart:hover {
+  scale: 0.98;
+  cursor: pointer;
+}
